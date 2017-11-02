@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Device Manager - Teste Pulsus - Milton Neto</title>
+	<meta name="author" content="Milton Neto" />
+	<meta name="description" content="Teste de UX de Milton Neto - Pulsus[MDM Soluções]" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/materialize.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+	<body>
+		<div class="topbar">
+			<div class="row topbar-inner">
+				<h1 class="col m2 main-logo">
+					<img src="img/main-logo.svg" alt="Device Manager" class="responsive-img col m10">
+				</h1>
+
+				<div class="searchbar col m4 offset-m5">
+					<div class="row">
+						<img src="img/magnifier.svg" class="responsive-img col m1 search-icon" />
+						<form class="col m10">
+							<input type="text" name="pesquisa" placeholder="Buscar grupo ou aparelho"/>
+						</form>
+						<button class="dropdown-btn col m1 ">
+							<i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+						</button>
+						
+					</div>
+				</div>
+
+				<button class="dropdown-filtros-btn col m1">
+					<span>Filtros</span><span class="filtros-icon"></span><img src="img/btn-filter.svg" class="icon-filtros" class="responsive-img" />
+				</button>
+			
+			</div>
+		</div>
+
+		<nav>
+			<div class="nav-wrapper">
+				<ul>
+					<div class="row">
+						<li class="tab col m2">
+							<a href="#modal1" class="modal-trigger" data-target="modal">
+								<i class="fa fa-calendar fa-2x" aria-hidden="true"></i><span>Por data e hora</span>
+							</a>
+						</li>
+
+						<li class="tab drop col m2">
+							<div class="row">
+								<div class="input-field">
+									<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+									<select multiple class="col m10">
+								      <option value="" disabled selected><span>Por aparelho</span></option>
+								      <option value="1">Option 1</option>
+								      <option value="2">Option 2</option>
+								      <option value="3">Option 3</option>
+								    </select>
+								  </div>
+							</div>
+						</li>
+					</div>
+				</ul>
+			</div>
+		</nav>
+			
+			
+			
+			<div id="modal1" class="modal">
+		    <div class="modal-content">
+		      <h4>Modal Header</h4>
+		      <div class="row">
+		      <div class="col m12">
+
+		      	<div class="row">
+		      	<div class="col m6">
+		      		<div class="container">
+
+						<div class="calendar">
+
+							<header>				
+
+								<h2>September</h2>
+
+								<a class="btn-prev fontawesome-angle-left" href="#"></a>
+								<a class="btn-next fontawesome-angle-right" href="#"></a>
+
+							</header>
+							
+							<table>
+							
+								<thead>
+									
+									<tr>
+										
+										<td>Mo</td>
+										<td>Tu</td>
+										<td>We</td>
+										<td>Th</td>
+										<td>Fr</td>
+										<td>Sa</td>
+										<td>Su</td>
+
+									</tr>
+
+								</thead>
+
+								<tbody>
+									
+									<tr>
+										<td class="prev-month">26</td>
+										<td class="prev-month">27</td>
+										<td class="prev-month">28</td>
+										<td class="prev-month">29</td>
+										<td class="prev-month">30</td>
+										<td class="prev-month">31</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+										<td>6</td>
+										<td>7</td>
+										<td>8</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td class="event">10</td>
+										<td>11</td>
+										<td>12</td>
+										<td>13</td>
+										<td>14</td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>17</td>
+										<td>18</td>
+										<td>19</td>
+										<td>20</td>
+										<td class="event">21</td>
+										<td>22</td>
+									</tr>
+
+									<tr>
+										<td class="current-day event">23</td>
+										<td>24</td>
+										<td>25</td>
+										<td>26</td>
+										<td>27</td>
+										<td>28</td>
+										<td>29</td>
+									</tr>
+									<tr>
+										<td>30</td>
+										<td class="next-month">1</td>
+										<td class="next-month">2</td>
+										<td class="next-month">3</td>
+										<td class="next-month">4</td>
+										<td class="next-month">5</td>
+										<td class="next-month">6</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+
+						</div> <!-- end calendar -->
+					</div>
+
+					</div> <!-- end container -->
+				</div>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		    </div>
+		  </div>
+		</nav>
+
+		<ul id="dropdown1" class="dropdown-content">
+			<form action="#">
+				<li>
+					<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+					<label for="filled-in-box">Filled in</label>
+				</li>
+				<li><a href="#!">two</a></li>
+				<li class="divider"></li>
+				<li><a href="#!">three</a></li>
+			</form>
+		</ul>
+
+		<div class="map">
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('.modal').modal();
+		  });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			 $('.dropdown-button').dropdown({
+			      inDuration: 800,
+			      outDuration: 500,
+			      hover: false, // Activate on hover
+			      belowOrigin: true, // Displays dropdown below the button
+			      alignment: 'center'
+			    }
+			  );
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('select').material_select();
+		  });
+	</script>
+	
+</html>
